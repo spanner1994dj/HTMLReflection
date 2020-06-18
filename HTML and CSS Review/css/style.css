@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: auto;
+  font-family: Poppins,sans-serif;
+  line-height: 1.42857143;
+  font-size: 1rem;
+  letter-spacing: .4px;
+}
+
+header {
+  display: inline-block;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header img {
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+}
+
+.btn-support, .btn-contact {
+  display: inline-block;
+  height: 56px;
+  width: 120px;
+  background-color: #4183d7;
+  margin-right: 20px;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+  line-height: 46px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.search-form {
+  display: inline-block;
+}
