@@ -1,35 +1,370 @@
 <!DOCTYPE html>
+<html>
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Netmatters</title>
       <link rel="stylesheet"  href="css/style.css">
-	</head>
-	<body>
-      <div class="container">
-          <div class="header">
-		      <header>
-               <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters">
-               <a class="btn-support"type="support" href="https://support.netmatters.com/">Support</a>
-               <a class="btn-contact"type="contact" href="https://www.netmatters.co.uk/contact-us">Contact</a>
-               <form class="search-form" method="get" action="https://www.netmatters.co.uk/search" >
-                  <input id="search-input" class="form-control search-bar" placeholder="Search..." type="text" name="keyword" value="">
-                  <button id="search-submit" class="search-btn" type="submit"></button>
-               </form>
-               <button type="button" class="btn btn-primary hamburger hamburger--spin" data-toggle="sidebar">
-               <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-               </span>
-               <span class="title">Menu</span>
-            </button>
-		      </header>
-         </div>   
-      </div>   
-		<main>
-      </main>
-		<footer>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="https://kit.fontawesome.com/2b6a60d8b9.js" crossorigin="anonymous"></script>      
+   </head>
    
-      </footer>		
+	<body>
+      <header>
+         <div class="header-inner">
+            <div class="header-logo">
+                  <img class="logo" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters">
+            </div>
+            <div class="action">
+               <div class="support">
+                  <a class="btn btn-support"type="support" href="https://support.netmatters.com/"><i class="fas fa-mouse" ></i> Support</a>
+               </div>
+               <div class="contact">   
+                  <a class="btn btn-contact"type="contact" href="https://www.netmatters.co.uk/contact-us"><i class="far fa-paper-plane"></i>Contact</a>
+               </div>
+               <div class="search">
+                  <form class="search-form" method="get" action="https://www.netmatters.co.uk/search">
+                  <input id="search-input" class="form-control search-bar" placeholder="Search..." type="text" name="keyword" value="">
+                  </form>
+               </div>
+               <div class="submit">
+                  <button id="search-submit" class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+               </div>
+               <div class="telephone">
+                  <a class="number" href="">
+                     <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  </a>
+               </div>   
+               <div class="ham-box">
+                  <button type="button" class="hamburger">
+                     <!-- <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                     </span> -->
+                     <i class="fas fa-bars"></i>
+                     <span class="title">Menu</span>
+                  </button>
+               </div>
+            </div>
+            <div class="search-xs">
+               <form class="search-form-xs" method="get" action="https://www.netmatters.co.uk/search">
+               <input id="search-input-xs" class="search-bar-xs" placeholder="Search..." type="text" name="keyword" value="">
+                  <button class="search-btn-s" type="submit">
+                     <i class="material-icons">&#xe8b6;</i>
+                  </button>
+               
+               </form>
+            </div>
+         </div> 
+      </header>   
+		<main>
+         <div class="container">
+            <ul class="nav-bar">
+               <li class="web" data-key="web">
+                  <a class="web-link"href="https://www.netmatters.co.uk/web-design">
+                     <i class="icn-web fas fa-code"></i>
+                     <small>Web </small>
+                     Design
+                  </a>
+                  <div class="webdrop">
+                     <ul class="web-li" role="menu">
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/website-design">
+                              Stylish Websites
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/ecommerce-development"> 
+                              Ecommerce Stores
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/branding">
+                              Branding
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/mobile-apps-development">
+                              Mobile Apps
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/web-hosting">Web Hosting
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.netmatters.co.uk/web-design/pay-monthly-websites">
+                              Pay Monthly Websites
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="it" data-key="it">
+                  <a href="">
+                     <i class="icn-it fas fa-desktop"></i>
+                     <small>IT </small>  
+                     Support
+                  </a>
+               </li>
+               <li class="telecoms" data-key="telecoms">
+                  <a href="https://www.netmatters.co.uk/telecoms-services">
+                     <i class="icn-telecoms fas fa-phone"></i>
+                     <small>Telecom </small> 
+                     Support
+                  </a>
+               </li>
+               <li class="software" data-key="software">
+                  <a href="https://www.netmatters.co.uk/bespoke-software">
+                     <i class="icn-bespoke fas fa-th"></i>
+                     <small>Bespoke </small>
+                     Software
+                  </a>
+               </li>
+               <li class="digital" data-key="digital">
+                  <a href="https://www.netmatters.co.uk/digital-marketing">
+                     <i class="icn-digital fas fa-signal"></i>
+                     <small>Digital </small>  
+                     Market
+                  </a>
+               </li>
+               <li class="security" data-key="security">
+                  <a href="https://www.netmatters.co.uk/cyber-security">
+                     <i class="icn-cyber fas fa-shield-alt"></i>
+                     <small>Cyber</small>  
+                     Security
+                  </a>
+               
+               </li>
+            </ul>
+         </div>   
+         <div class="img-scroll">
+            <!-- <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp" type="image/webp"> -->
+            <div class="itsupport">
+               <div class="it-text">
+                  <h1>IT Support</h1>
+                  <p>
+                     Fast and cost effective IT support<br>
+                     services for your business
+                  </p>
+                  <a href="https://www.netmatters.co.uk/it-support" class="btn btn-it btn-lg"> Find out more
+                     <i class="arrow-it fas fa-arrow-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="cards crd">
+            <div class=crd-place>
+               <div class="card-soft">
+                  <i class="icn-bespoked fas fa-th"></i>
+                  <h2>Bespoke Software</h2>
+                  <p>Tailored software solutions to improve business productivity and online profits. Our expert team will ensure a software solution. </p>
+                  <button class="crd btn-sft">Read More</button>
+               </div>
+               <div class="card-it">
+                  <i class="icn-its fas fa-desktop"></i>
+                  <h2>IT Support.</h2>
+                  <p>Remotely managed IT services that is catered to your business needs, adds value and reduces cost.</p>
+                  <button class="btn--itsupport">Read More</button>
+               </div>
+               <div class="card-digital">
+                  <i class="icn-digitalm fas fa-signal"></i>
+                  <h2>Digital Marketing.</h2>
+                  <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monitor online performances.</p>
+                  <button class="btn-market">Read More</button>
+               </div>
+               <div class="card-telecoms">
+                  <i class="icn-telecom fas fa-phone"></i>
+                  <h2>Telecom Services.</h2>
+                  <p>Stay connected with bespoke telecoms solutions when you need it the most.</p>
+                  <button class="btn-tele">Read More</button>
+               </div>
+               <div class="card-web">
+                  <i class="icn-web fas fa-code"></i>
+                  <h2>Web Design.</h2>
+                  <p>User-centric design for businesses looking to make a lasting first impression.</p>
+                  <button class="btn-web">Read More</button>
+               </div>
+               <div class="card-cyber">
+                  <i class="icn-cybers fas fa-shield-alt"></i>
+                  <h2>Cyber Security.</h2>
+                  <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
+                  <button class="btn-cyber">Read More</button>
+               </div>
+               <div class="card-develop">
+                  <i class="icn-train fas fa-graduation-cap"></i>
+                  <h2>Developer Training.</h2>
+                  <p>Have you ever considered a career in web development but you aren't sure where to start?</p>
+                  <button class="btn-develop">Read More</button>
+               </div>
+            </div>
+         </div>
+         <div class="about">
+            <div class="info">
+               <div class="info-text">
+                  <h1>Netmatters</h1>
+                  <p> <strong>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</strong></p>
+                  <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects, nurture existing leads and further grow sales.</p>
+                  <p>We provide cost effective, reliable solutions to a range of services; from bespoke cloud-based management systems,workflow and IT solutions through to creative website development and integrated digital campaigning.</p>
+                  
+                  <div>
+                     <a class="info-btn">Our Culture
+                        <i class="arrow fas fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>   
+            </div>
+         </div>
+         <div class="news">
+            <ul>
+               <li class="active">
+                  <span>
+                     Latest
+                  </span>
+               </li>
+            </ul>
+            <div class="stories">
+               <div class="article-1">
+                  
+               </div>
+            </div>
+         </div>
+         <div class="credit">
+            <div class="cred">
+               <div class="busseys">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-gZQR.png" alt="Busseys Logo" class="coloured">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-T5gi.jpg" alt="Busseys Logo" class="greyscale">
+               </div>
+               <div class="crane">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-MjHw.png" alt="Crane Garden Building Logo" class="coloured">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-BsyK.jpg" alt="Crane Garden Building Logo" class="greyscale">
+               </div>
+               <div class="beat">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-ukEL.png" alt="Beat Logo" class="coloured">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-RfLc.jpg" alt="Beat Logo" class="greyscale">
+               </div>
+               <div class="north">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-kGn4.png" alt="Northern Diver Logo" class="coloured">
+                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-jHUl.jpg" alt="Northern Diver Logo" class="greyscale">
+               </div>
+            </div>
+         </div>
+      </main>
+		<footer> 
+         <div class="ft-align">
+            <div class="contacts">
+               <h4>
+                  Contact Us
+               </h4>
+
+               <ul class="address">
+                  <li>11 Penfold Drive</li>
+                  <li>Wymondham</li>
+                  <li>Norfolk</li>
+                  <li>NR18 0WZ</li>
+                  <li>&nbsp;</li>
+                  <li>Tel: <a href="tel:01603704020">01603 70 40 20</a></li>
+                  <li>Email: <a href="mailto:support@netmatters.com">support@netmatters.com</a></li>
+               </ul>
+            </div>
+            <div class="comp">
+               <h4>
+                  About Netmatters
+               </h4>
+               <ul>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/news">News
+                     </a>              
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/our-careers">
+                        Our Careers
+                     </a>            
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/team">
+                        Our Team
+                     </a>                
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/office-tour">
+                           Our Office Tour
+                     </a>               
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/privacy-policy">
+                           Privacy Policy
+                     </a>           
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/cookie-policy">
+                           Cookie Policy
+                     </a>           
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/terms-and-conditions">
+                           Terms &amp; Conditions
+                     </a>            
+                  </li>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/terms-and-conditions/uk-domains">
+                           UK Domains
+                     </a>         
+                  </li>
+               </ul>
+            </div>
+            <div class="website">
+               <h4> Website</h4>
+               <ul>
+                  <li class=" ">
+                     <a href="https://www.netmatters.co.uk/sitemap.xml">
+                           Sitemap
+                     </a>        
+                  </li>
+                  <li> 
+                  © Copyright Netmatters Ltd. 2020
+                  </li>
+                  <li>
+                  All rights reserved
+                  </li>
+               </ul>
+            </div>
+            <div class="social">
+               <h4>Social Media</h4>
+                  <div class="social-media">
+                     <div class="faces">
+                        <a class="facebook" href="https://en-gb.facebook.com/netmatters/" target="_blank" rel="noopener noreferrer">
+                           <i class="face fab fa-facebook-f"></i>
+                        </a>
+                     </div>
+                     <div class="twits">
+                        <a class="twitter" href="https://twitter.com/netmattersltd" target="_blank" rel="noopener noreferrer">
+                           <i class="twit fab fa-twitter"></i>
+                        </a>
+                     </div>
+                     <div class="linkd">
+                        <a class="linkedin" href="https://www.linkedin.com/company/netmatters-ltd/" target="_blank" rel="noopener noreferrer">
+                           <i class="link fa fa-linkedin"></i>
+                        </a>
+                     </div>  
+                  </div>
+            </div>
+         </div>
+      </footer>
+      <div class="partners">
+         <div class="part">
+            <iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 220px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 82px;" tabindex="0" vspace="0" id="I0_1595594064126" name="I0_1595594064126" src="https://www.gstatic.com/partners/badge/templates/badge.html?usegapi=1&amp;agency-id=7604891478&amp;origin=https%3A%2F%2Fwww.netmatters.co.uk&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.WuHGBC70tdw.O%2Fam%3DwQc%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCNpHoaMoiiRyTFOuGnNuTT-eiD9VA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1595594064126&amp;_gfid=I0_1595594064126&amp;parent=https%3A%2F%2Fwww.netmatters.co.uk&amp;pfname=&amp;rpctoken=32818154" data-gapiattached="true" width="100%" frameborder="0"></iframe>
+            
+         </div>
+      </div>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+<iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 220px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 82px;" tabindex="0" vspace="0" id="I0_1595594064126" name="I0_1595594064126" src="https://www.gstatic.com/partners/badge/templates/badge.html?usegapi=1&amp;agency-id=7604891478&amp;origin=https%3A%2F%2Fwww.netmatters.co.uk&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.WuHGBC70tdw.O%2Fam%3DwQc%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCNpHoaMoiiRyTFOuGnNuTT-eiD9VA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1595594064126&amp;_gfid=I0_1595594064126&amp;parent=https%3A%2F%2Fwww.netmatters.co.uk&amp;pfname=&amp;rpctoken=32818154" data-gapiattached="true" width="100%" frameborder="0"></iframe>

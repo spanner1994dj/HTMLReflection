@@ -1,0 +1,19 @@
+
+/*mixins*/
+
+@mixin themes ($map){         
+    @each $themes, $color in $map {
+     &-#{$themes}{
+       color:$color;
+     }
+    }
+}
+
+
+@mixin card ($map){         
+  @each $themes, $color in $map {
+   &-#{$themes}{
+     background-color:$color;
+   }
+  }
+}

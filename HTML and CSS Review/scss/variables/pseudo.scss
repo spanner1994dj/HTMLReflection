@@ -1,0 +1,320 @@
+
+
+/*header*/
+
+.hamburger:hover{
+    background-color:darken($color: #333645, $amount: 8%);
+}
+
+.btn-contact:hover{
+    background-color: darken($color: #7E808a, $amount: 10%);
+}
+
+.btn-support:hover{
+    background-color: darken($color: #4183d7, $amount: 10%);
+}
+
+.search-btn:hover{
+    background-color: darken($color: #7E808a, $amount: 5%);
+}
+
+/*nav bar*/
+
+.web:hover{
+    background-color: #926fb1;
+    color:#fff;
+    i{
+        color: #fff;
+    }
+    
+    .webdrop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.it:hover{
+    background-color: #4183d7;
+    color:white;
+    i{
+        color: #fff;
+    }
+}
+
+.telecoms:hover{
+    background-color: #d64541;
+    color:white;
+    i{
+        color: #fff;
+    }
+}
+
+.software:hover{
+    background-color: #526781;
+    color:white;
+    i{
+        color: #fff;
+    }
+}
+
+.digital:hover{
+    background-color: #2eec71;
+    color:white;
+    i{
+        color: #fff;
+    }
+}
+
+.security:hover{
+    background-color: #f62459;
+    color:white;
+    i{
+        color: #fff;
+    }
+}
+
+.web-menu>ul>li:not(:last-child) a::after{
+    content:"-";
+    padding-left: 30px;
+ }
+
+.card-soft::after{
+    content: " ";
+    display: table;
+}
+ .card-soft:hover{
+    background: #67809f;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #67809f;
+    }
+
+    .icn-bespoked{
+        color:#67809f;
+        background-color: #fff;
+        
+    }
+}
+
+.card-it:hover{
+    background: #4183d7;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #4183d7;
+    }
+
+    .icn-its{
+        color:#4183d7;
+        background-color: #fff;
+        
+    }
+}
+
+.card-digital:hover{
+    background: #2eec71;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #2eec71;
+    }
+
+    .icn-digitalm{
+        color:#2eec71;
+        background-color: #fff;
+        
+    }
+}
+
+.card-telecoms:hover{
+    background: #d64541;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #d64541;
+    }
+
+    .icn-telecom{
+        color:#d64541;
+        background-color: #fff;
+        
+    }
+}
+
+.card-web:hover{
+    background: #926fb1;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #926fb1;
+    }
+
+    .icn-web{
+        color:#926fb1;
+        background-color: #fff;
+        
+    }
+}
+
+.card-cyber:hover{
+    background: #f62459;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #f62459;
+    }
+
+    .icn-cybers{
+        color:#f62459;
+        background-color: #fff;
+        
+    }
+}
+
+.card-develop:hover{
+    background: #79539a;
+
+    h2{
+        color:#fff;
+    }
+
+    p{
+       text-justify: auto;
+       justify-content: center;
+       color: #fff;
+    }
+
+    button{
+       justify-content: center;
+       height: 50px;
+       background-color: #fff;
+       color: #79539a;
+    }
+
+    .icn-train{
+        color:#79539a;
+        background-color: #fff;
+        
+    }
+}
+
+.active::after{
+    content:"";
+    
+}
+
+.busseys:hover{
+    .coloured{
+        display: block;
+    }
+    .greyscale{
+        display: none;
+    }
+}
+
+.crane:hover{
+    .coloured{
+        display: block;
+    }
+    .greyscale{
+        display: none;
+    }
+}
+
+.beat:hover{
+    .coloured{
+        display: block;
+    }
+    .greyscale{
+        display: none;
+    }
+}
+
+.north:hover{
+    .coloured{
+        display: block;
+    }
+    .greyscale{
+        display: none;
+    }
+}
+
+
+

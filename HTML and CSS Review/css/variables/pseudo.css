@@ -1,0 +1,308 @@
+/*header*/
+.hamburger:hover {
+  background-color: #22242e;
+}
+
+.btn-contact:hover {
+  background-color: #656770;
+}
+
+.btn-support:hover {
+  background-color: #286abd;
+}
+
+.search-btn:hover {
+  background-color: #71737d;
+}
+
+/*nav bar*/
+.web:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.web:hover i {
+  color: #fff;
+}
+
+.web:hover .webdrop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.it:hover {
+  background-color: #4183d7;
+  color: white;
+}
+
+.it:hover i {
+  color: #fff;
+}
+
+.telecoms:hover {
+  background-color: #d64541;
+  color: white;
+}
+
+.telecoms:hover i {
+  color: #fff;
+}
+
+.software:hover {
+  background-color: #526781;
+  color: white;
+}
+
+.software:hover i {
+  color: #fff;
+}
+
+.digital:hover {
+  background-color: #2eec71;
+  color: white;
+}
+
+.digital:hover i {
+  color: #fff;
+}
+
+.security:hover {
+  background-color: #f62459;
+  color: white;
+}
+
+.security:hover i {
+  color: #fff;
+}
+
+.web-menu > ul > li:not(:last-child) a::after {
+  content: "-";
+  padding-left: 30px;
+}
+
+.card-soft::after {
+  content: " ";
+  display: table;
+}
+
+.card-soft:hover {
+  background: #67809f;
+}
+
+.card-soft:hover h2 {
+  color: #fff;
+}
+
+.card-soft:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-soft:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #67809f;
+}
+
+.card-soft:hover .icn-bespoked {
+  color: #67809f;
+  background-color: #fff;
+}
+
+.card-it:hover {
+  background: #4183d7;
+}
+
+.card-it:hover h2 {
+  color: #fff;
+}
+
+.card-it:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-it:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #4183d7;
+}
+
+.card-it:hover .icn-its {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+.card-digital:hover {
+  background: #2eec71;
+}
+
+.card-digital:hover h2 {
+  color: #fff;
+}
+
+.card-digital:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-digital:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #2eec71;
+}
+
+.card-digital:hover .icn-digitalm {
+  color: #2eec71;
+  background-color: #fff;
+}
+
+.card-telecoms:hover {
+  background: #d64541;
+}
+
+.card-telecoms:hover h2 {
+  color: #fff;
+}
+
+.card-telecoms:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-telecoms:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #d64541;
+}
+
+.card-telecoms:hover .icn-telecom {
+  color: #d64541;
+  background-color: #fff;
+}
+
+.card-web:hover {
+  background: #926fb1;
+}
+
+.card-web:hover h2 {
+  color: #fff;
+}
+
+.card-web:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-web:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #926fb1;
+}
+
+.card-web:hover .icn-web {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+.card-cyber:hover {
+  background: #f62459;
+}
+
+.card-cyber:hover h2 {
+  color: #fff;
+}
+
+.card-cyber:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-cyber:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #f62459;
+}
+
+.card-cyber:hover .icn-cybers {
+  color: #f62459;
+  background-color: #fff;
+}
+
+.card-develop:hover {
+  background: #79539a;
+}
+
+.card-develop:hover h2 {
+  color: #fff;
+}
+
+.card-develop:hover p {
+  text-justify: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.card-develop:hover button {
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  color: #79539a;
+}
+
+.card-develop:hover .icn-train {
+  color: #79539a;
+  background-color: #fff;
+}
+
+.active::after {
+  content: "";
+}
+
+.busseys:hover .coloured {
+  display: block;
+}
+
+.busseys:hover .greyscale {
+  display: none;
+}
+
+.crane:hover .coloured {
+  display: block;
+}
+
+.crane:hover .greyscale {
+  display: none;
+}
+
+.beat:hover .coloured {
+  display: block;
+}
+
+.beat:hover .greyscale {
+  display: none;
+}
+
+.north:hover .coloured {
+  display: block;
+}
+
+.north:hover .greyscale {
+  display: none;
+}
