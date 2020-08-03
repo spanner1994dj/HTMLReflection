@@ -27,13 +27,11 @@
         color: #fff;
     }
     
-    .webdrop{
+    .web-li{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
         flex-wrap: wrap;
-        flex-direction: row;
+        z-index: 1;
     }
 }
 

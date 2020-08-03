@@ -400,18 +400,18 @@ body{
       text-transform: uppercase;
       font-size: 18px;
       text-decoration: none;
-      border-right: groove 0.5px $navigation-border-lgt;
+      border-right: groove 3px $navigation-border-lgt;
       //box-shadow: lightness($color: $navigation-border-lgt)
       
 
    }
 
    li:last-child{
-      border-right:inset 1px $navigation-border-lgt;
+      border-right:groove 3px $navigation-border-lgt;
    }
    
    li:first-child{
-      border-left:groove 1px $navigation-border-lgt;
+      border-left:groove 3px $navigation-border-lgt;
       
    }
    
@@ -439,38 +439,47 @@ body{
 /* dropdown menu */
 
 .webdrop{
-   position: absolute; 
    display: flex;
-   top: 100%;
+   position: relative;
+   // top: 100%;
    // left: -1px;
    // right: -1px;
    width: 100%;
-   height: 45px;
+   height: 50px;
    padding-left:0px;
-   text-align: left;
+   text-align: center;
    margin-left: 0;
    background-color: #79539a;
+   justify-content: center;
    border-width: 0;
-   font-size: 14px;
-   margin: 0;
    z-index: 1;
-   border: solid 1px rgb(238, 6, 6);
+   //border: solid 1px rgb(238, 6, 6);
 
    .web-li{
-      width: 100%;
-      display: block;
+      display: flex;
+      position: relative;
       
+      width: 100%;
+      height: 50px;
+      padding-left:0px;
+      text-align: center;
+      // margin-left: 1000px;
+      
+      justify-content: center;
+      border-width: 0;
+      z-index: 1;
    }
 
    a{
       height:45px;
-      display: inline-block;
-      position: absolute;
-      border: solid 1px rgb(238, 6, 6);
+      display: block;
+      text-align: center;
+      //border: solid 1px green;
       margin: 0;
-      width: 300px;
+      width: 192px;
+      padding: 20px 5px;
       font-size: 14px;
-      //border-width: 0;
+      border-width: 0;
       text-align: left;      
       
    }

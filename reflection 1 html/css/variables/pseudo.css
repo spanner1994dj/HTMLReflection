@@ -25,13 +25,11 @@
   color: #fff;
 }
 
-.web:hover .webdrop {
+.web:hover .web-li {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
   flex-wrap: wrap;
-  flex-direction: row;
+  z-index: 1;
 }
 
 .it:hover {
