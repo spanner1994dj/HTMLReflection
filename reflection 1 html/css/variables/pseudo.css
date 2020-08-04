@@ -304,3 +304,27 @@
 .north:hover .greyscale {
   display: none;
 }
+
+.further:hover .coloured {
+  display: block;
+}
+
+.further:hover .greyscale {
+  display: none;
+}
+
+.QMS:hover .coloured {
+  display: block;
+}
+
+.QMS:hover .greyscale {
+  display: none;
+}
+
+.carbon:hover .coloured {
+  display: block;
+}
+
+.carbon:hover .greyscale {
+  display: none;
+}
