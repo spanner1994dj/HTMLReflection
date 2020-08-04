@@ -983,32 +983,101 @@ body {
 
 /* Latest News*/
 .news {
-  border: solid 1px red;
-  height: 600px;
+  height: 800px;
 }
 
 .news .active {
   height: 90px;
   width: 100%;
-  border: solid 1px blue;
   list-style: none;
 }
 
 .news .active span {
   font-size: 2.5rem;
-  text-decoration: underline;
   color: #000;
 }
 
-.news .stories {
-  border: solid 1px red;
+.news .active .line {
+  background-color: #666;
+  width: 115px;
+  height: 5px;
+  margin-top: 42px;
+}
+
+.news .articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 700px;
+  background-color: ghostwhite;
+}
+
+.news .articles .art {
+  border: solid 2px #ccc;
+}
+
+.news .articles .read {
+  margin-bottom: 100px;
+  height: auto;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  line-height: 35px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.news .articles p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.news .articles .art-1 {
+  width: 25%;
+}
+
+.news .articles .art-1 h3 {
+  color: #926fb1;
+}
+
+.news .articles .art-1 .read-1 {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.news .articles .art-2 {
+  width: 25%;
+}
+
+.news .articles .art-2 h3 {
+  color: #2ecc71;
+}
+
+.news .articles .art-2 .read-2 {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.news .articles .art-3 {
+  width: 25%;
+}
+
+.news .articles .art-3 h3 {
+  color: #2ecc71;
+}
+
+.news .articles .art-3 .read-3 {
+  background-color: #2ecc71;
+  color: #fff;
 }
 
 /* Accreditation */
 .credit {
   height: 200px;
   width: 100%;
-  border: solid 1px blue;
   align-content: center;
   padding: 15px;
 }
@@ -1016,7 +1085,6 @@ body {
 .credit .cred {
   height: 100%;
   width: auto;
-  border: solid 1px green;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1154,7 +1222,6 @@ footer ul {
 .partners .part {
   height: 100%;
   width: auto;
-  border: solid 1px red;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
