@@ -1079,15 +1079,21 @@ body{
          background-color: #333645;
          width: 115px;
          height: 5px;
-         margin-top:35px;
-         margin-left: 105px;
+         margin-top:70px;
+         margin-left: 290px;
       }
+   }
+
+   .stories{
+      padding-top: 20px;
+      background-color: #f0f0f0 ;
+
    }
 
    .break{
       height:1px;
       width: 80%;
-      background-color: #444;
+      background-color: #ccc;
       justify-self: center;
       align-self: center;
       margin-top: 20px;
@@ -1098,18 +1104,19 @@ body{
       //border: solid 1px gold;
       padding-left: 100px;
       padding-right: 100px;
+      
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      height:625px;
-      background-color: ghostwhite ;
-
+      height:550px;
+     
       .art{
          border:solid 2px #ccc;
+         background-color: #fff;
       }
 
       .read{
-         margin: 0 0px 0 30px;
+         margin: 0 0px 20px 30px;
          height: auto;
          padding:5px 15px;
          font-size: 1.063rem;
@@ -1134,7 +1141,7 @@ body{
       }
 
       h3{
-         margin: 0px;
+         margin-top: 20px;
          font-size: 1rem;
          padding-left: 30px;
       }
@@ -1167,7 +1174,7 @@ body{
          display: flex;
          flex-direction: column;
          width: 337.6px;
-         margin-left:100px;
+         
          
          //border: solid 1px blue;
 
@@ -1210,9 +1217,10 @@ body{
 
       .art-2{
          width:337.6px;
-         
+         display:flex;
+         flex-direction: column;
          //border: solid 1px green;
-
+         
          h3{
             color: #2ecc71;
          }
@@ -1220,6 +1228,19 @@ body{
          .read-2{
             background-color: #2ecc71;
             color: #fff;
+            width: 140px;
+         }
+
+         .user{
+            display: flex;
+            flex-direction: row;
+
+            .details{
+               position: relative;
+               margin: 20px;
+               margin-top: 30px;
+         
+            }
          }
 
       }
@@ -1227,16 +1248,36 @@ body{
       .art-3{
          width: 337.6px;
          margin-right: 100px;
+         display: flex;
+         flex-direction: column;
          
          //border: solid 1px red;
 
          h3{
             color: #2ecc71;
+            margin-bottom: 20px;
+         }
+
+         .text{
+            padding-top: 0;
          }
 
          .read-3{
             background-color: #2ecc71;
             color: #fff;
+            width: 140px;
+         }
+
+         .user{
+            display: flex;
+            flex-direction: row;
+
+            .details{
+               position: relative;
+               margin: 20px;
+               margin-top: 30px;
+         
+            }
          }
       }
    }
