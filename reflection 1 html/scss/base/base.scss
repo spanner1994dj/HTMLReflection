@@ -1057,30 +1057,31 @@ body{
 
 .news{
    //border: solid 1px red;
-   height: 800px;
+   height: 700px;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
 
    .active{
-      height:90px;
+      height:70px;
       width: 100%;
       //border: solid 1px blue;
       list-style: none;
       
       span{
+         width:62px;
          font-size: 1.25rem;
          font-weight: 600;
          color: #333645;
-         margin-left: 105px;
+         margin-left: 171px;
       }
 
       .line{
          background-color: #333645;
-         width: 115px;
+         width: 62px;
          height: 5px;
-         margin-top:70px;
-         margin-left: 290px;
+         margin-top:50px;
+         margin-left: 170px;
       }
    }
 
@@ -1248,7 +1249,7 @@ body{
       .art-3{
          width: 337.6px;
          margin-right: 100px;
-         display: flex;
+         display: none;
          flex-direction: column;
          
          //border: solid 1px red;
@@ -1287,12 +1288,14 @@ body{
 /* Accreditation */
 
 .credit{
-   height: 200px;
+   height: 125px;
    width: 100%;
    //border: solid 1px blue;
    align-content: center;
    padding:15px;
+   vertical-align: middle;
    .cred{
+      padding: 10px;
       height: 100%;
       width: auto;
       //border: solid 1px green;
@@ -1439,6 +1442,8 @@ footer{
 }
 
 .partners{
+   display: flex;
+   flex-direction: row;
    height:200px;
    width: 100%;
    //border:solid 1px goldenrod;
@@ -1448,7 +1453,7 @@ footer{
 
    .part{
       height: 100%;
-      width: auto;
+      width: 100%;
       //border: solid 1px red;
       display: flex;
       flex-direction: row;
