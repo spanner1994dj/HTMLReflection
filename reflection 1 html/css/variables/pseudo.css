@@ -25,9 +25,8 @@
   color: #fff;
 }
 
-.web:hover .webdrop {
+.web:hover .drop {
   display: flex;
-  z-index: 1;
 }
 
 .it:hover {

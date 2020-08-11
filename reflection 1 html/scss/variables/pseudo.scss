@@ -27,11 +27,12 @@
         color: #fff;
     }
     
-    .webdrop{
+    .drop{
         display: flex;
-        //flex-direction: column;
+        //flex-direction: row;
+        
         //flex-wrap: wrap;
-        z-index: 1;
+        
     }
 }
 
