@@ -25,10 +25,8 @@
   color: #fff;
 }
 
-.web:hover .web-li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.web:hover .webdrop {
+  display: block;
   z-index: 1;
 }
 
@@ -77,9 +75,9 @@
   color: #fff;
 }
 
-.web-menu > ul > li:not(:last-child) a::after {
+.webdrop > ul > li:not(:last-child) a::after {
   content: "-";
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .card-soft::after {

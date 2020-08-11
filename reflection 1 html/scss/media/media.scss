@@ -79,7 +79,6 @@
       width: 100%;
     }
   }
-
   
   .info{
     width:80%;
@@ -88,6 +87,8 @@
   .info-text{
     width:100%;
   }
+
+  /* Cards */
 
   .card-soft{
     width: 100%;
@@ -120,6 +121,7 @@
     width: 48.5%;
   }
 
+  /* footer elements */
 
   .ft-align{
 
@@ -233,10 +235,12 @@
   .info-text{
     width: 100%;
   }
-
-  .art-3{
-    display:flex;
-    
+  .news{
+    .articles{
+      .art-3{
+        display:flex;
+      }    
+    }
   }
 
   /* footer */

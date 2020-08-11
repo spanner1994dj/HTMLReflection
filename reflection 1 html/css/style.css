@@ -354,15 +354,15 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
-  border-right: groove 3px #857c91;
+  border-right: groove 0.5px #857c91;
 }
 
-.nav-bar li:last-child {
-  border-right: groove 3px #857c91;
+.nav-bar li li:last-child {
+  border-right: groove 1px #857c91;
 }
 
 .nav-bar li:first-child {
-  border-left: groove 3px #857c91;
+  border-left: groove 1px #857c91;
 }
 
 .nav-bar a {
@@ -409,41 +409,51 @@ body {
 
 /* dropdown menu */
 .webdrop {
-  display: flex;
+  display: none;
   position: relative;
-  width: 100%;
-  height: 50px;
+  left: 0;
+  width: 100vw;
   padding-left: 0px;
-  text-align: center;
-  margin-left: 0;
   background-color: #79539a;
   justify-content: center;
   border-width: 0;
-  z-index: 1;
+  border: solid 1px #ee0606;
 }
 
 .webdrop .web-li {
   display: flex;
-  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid 3px aqua;
   width: 100%;
   height: 50px;
   padding-left: 0px;
   text-align: center;
-  justify-content: center;
   border-width: 0;
-  z-index: 1;
+}
+
+.webdrop li {
+  border-width: 0;
+}
+
+.webdrop li:first-child {
+  border: 0;
+}
+
+.webdrop li:last-child {
+  border: 0;
 }
 
 .webdrop a {
-  height: 45px;
+  height: 50px;
   display: block;
   text-align: center;
-  margin: 0;
-  width: 192px;
+  margin-right: 25px;
+  width: 250px;
   padding: 20px 5px;
   font-size: 14px;
   border-width: 0;
-  text-align: left;
+  text-align: center;
 }
 
 /*image carousel*/
@@ -987,6 +997,15 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.news ul {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  padding: 0 230px;
 }
 
 .news .active {
@@ -996,24 +1015,23 @@ body {
 }
 
 .news .active span {
-  width: 62px;
   font-size: 1.25rem;
   font-weight: 600;
   color: #333645;
-  margin-left: 171px;
+  margin-left: 0;
 }
 
 .news .active .line {
   background-color: #333645;
   width: 62px;
   height: 5px;
-  margin-top: 50px;
-  margin-left: 170px;
+  margin-top: 48px;
 }
 
 .news .stories {
   padding-top: 20px;
   background-color: #f0f0f0;
+  width: 100%;
 }
 
 .news .break {
@@ -1026,8 +1044,7 @@ body {
 }
 
 .news .articles {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1164,7 +1181,7 @@ body {
 
 .news .articles .art-3 {
   width: 337.6px;
-  margin-right: 100px;
+  margin-right: 0px;
   display: none;
   flex-direction: column;
 }
@@ -1201,7 +1218,6 @@ body {
   width: 100%;
   align-content: center;
   padding: 15px;
-  vertical-align: middle;
 }
 
 .credit .cred {
@@ -1222,7 +1238,7 @@ footer {
   background-color: #333645;
   color: #fff;
   text-decoration: none;
-  padding: 47px 10px 43px;
+  padding: 47px 60px 43px;
 }
 
 footer a {
@@ -1237,10 +1253,11 @@ footer ul {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  padding: 0 150px;
 }
 
 .ft-align h4 {
-  text-align: center;
+  text-align: left;
 }
 
 .contacts {
@@ -1372,12 +1389,21 @@ footer ul {
   margin-top: 35px;
 }
 
-.goo {
-  width: 300px;
+.google {
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin-right: 0;
+  margin-left: -30px;
+}
+
+.google .goo {
+  width: 350px;
+  position: absolute;
   height: 140px;
-  margin-top: px;
-  margin-right: -90px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: -20px;
   border: solid 2px #ccc;
   transform: scale(0.5);
   -webkit-transform: scale(0.5);
@@ -1456,6 +1482,7 @@ footer ul {
   .info-text {
     width: 100%;
   }
+  /* Cards */
   .card-soft {
     width: 100%;
     margin-right: 0;
@@ -1480,6 +1507,7 @@ footer ul {
   .card-develop {
     width: 48.5%;
   }
+  /* footer elements */
   .ft-align {
     display: flex;
     flex-wrap: wrap;
@@ -1563,7 +1591,7 @@ footer ul {
   .info-text {
     width: 100%;
   }
-  .art-3 {
+  .news .articles .art-3 {
     display: flex;
   }
   /* footer */
@@ -1709,10 +1737,8 @@ footer ul {
   color: #fff;
 }
 
-.web:hover .web-li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.web:hover .webdrop {
+  display: block;
   z-index: 1;
 }
 
@@ -1761,9 +1787,9 @@ footer ul {
   color: #fff;
 }
 
-.web-menu > ul > li:not(:last-child) a::after {
+.webdrop > ul > li:not(:last-child) a::after {
   content: "-";
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .card-soft::after {
