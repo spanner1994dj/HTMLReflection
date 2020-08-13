@@ -18,6 +18,7 @@ body {
   width: 100%;
   letter-spacing: .4px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -341,9 +342,10 @@ body {
   height: 99px;
   line-height: 1;
   text-decoration: none;
+  /* web drop menu*/
 }
 
-.nav-bar div {
+.nav-bar li {
   display: inline-block;
   position: relative;
   width: 192px;
@@ -357,7 +359,7 @@ body {
   border-right: groove 0.5px #857c91;
 }
 
-.nav-bar div li:last-child {
+.nav-bar li li:last-child {
   border-right: groove 1px #857c91;
 }
 
@@ -385,24 +387,29 @@ body {
   top: 100%;
   left: -1px;
   right: -1px;
-  width: 100%;
+  width: 100vw;
   padding-left: 0px;
   text-align: center;
   background-color: #79539a;
-  justify-content: left;
-  align-self: center;
-  margin-left: -383px;
-  border: solid 1px #ee0606;
+}
+
+.nav-bar .drop ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #79539a;
 }
 
 .nav-bar .drop .web-li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border: solid 1px aqua;
-  width: 100%;
+  width: auto;
   height: 50px;
-  padding-left: 400px;
   text-align: center;
   background-color: #79539a;
 }
@@ -411,7 +418,251 @@ body {
   height: 50px;
   display: block;
   text-align: center;
-  width: 200px;
+  width: 191.5px;
+  padding: 20px 5px;
+  font-size: 14px;
+  border-width: 0;
+  text-align: center;
+}
+
+.nav-bar .drop2 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -192px;
+  right: 100%;
+  width: 100vw;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #4183d7;
+}
+
+.nav-bar .drop2 ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #4183d7;
+}
+
+.nav-bar .drop2 .it-li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #4183d7;
+}
+
+.nav-bar .drop2 a {
+  height: 50px;
+  display: block;
+  text-align: center;
+  width: 191.5px;
+  padding: 20px 5px;
+  font-size: 14px;
+  border-width: 0;
+  text-align: center;
+}
+
+.nav-bar .drop2 a ::after {
+  content: "-";
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.nav-bar .drop3 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -384px;
+  right: 100%;
+  width: 100vw;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #d64541;
+}
+
+.nav-bar .drop3 ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #d64541;
+}
+
+.nav-bar .drop3 .tel-li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #d64541;
+}
+
+.nav-bar .drop3 a {
+  height: 50px;
+  display: block;
+  text-align: center;
+  width: 191.5px;
+  padding: 20px 5px;
+  font-size: 14px;
+  border-width: 0;
+  text-align: center;
+}
+
+.nav-bar .drop3 a ::after {
+  content: "-";
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.nav-bar .drop4 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -576px;
+  right: 100%;
+  width: 100vw;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #67809f;
+}
+
+.nav-bar .drop4 ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #67809f;
+}
+
+.nav-bar .drop4 .sof-li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #67809f;
+}
+
+.nav-bar .drop4 a {
+  height: 50px;
+  display: block;
+  text-align: center;
+  width: 191.5px;
+  padding: 20px 5px;
+  font-size: 14px;
+  border-width: 0;
+  text-align: center;
+}
+
+.nav-bar .drop4 a ::after {
+  content: "-";
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.nav-bar .drop5 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -768px;
+  right: 100%;
+  width: 100vw;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #2eec71;
+}
+
+.nav-bar .drop5 ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #2eec71;
+}
+
+.nav-bar .drop5 .mar-li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #2eec71;
+}
+
+.nav-bar .drop5 a {
+  height: 50px;
+  display: block;
+  text-align: center;
+  width: 191.5px;
+  padding: 20px 5px;
+  font-size: 14px;
+  border-width: 0;
+  text-align: center;
+}
+
+.nav-bar .drop5 a ::after {
+  content: "-";
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.nav-bar .drop6 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -960px;
+  right: 100%;
+  width: 100vw;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #f62459;
+}
+
+.nav-bar .drop6 ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  right: 100%;
+  background-color: #f62459;
+}
+
+.nav-bar .drop6 .sec-li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #f62459;
+}
+
+.nav-bar .drop6 a {
+  height: 50px;
+  display: block;
+  text-align: center;
+  width: 191.5px;
   padding: 20px 5px;
   font-size: 14px;
   border-width: 0;
@@ -446,7 +697,6 @@ body {
   color: #926fb1;
 }
 
-/* dropdown menu */
 /*image carousel*/
 .img-scroll {
   display: flex;
@@ -945,40 +1195,42 @@ body {
   background-color: #333645;
   color: #fff;
   justify-content: center;
-  height: 500px;
+  height: 600px;
 }
 
 .about .info {
   height: auto;
+  width: 100%;
   font-size: 1rem;
   margin-left: 10px;
-  padding-left: 10px;
+  padding-left: 120px;
 }
 
-.about .info-text {
-  width: 100%;
-  height: 100%;
+.about .info .info-text {
+  width: 80%;
+  max-height: 100%;
 }
 
-.about h1 {
+.about .info .info-text h1 {
   font-weight: 700;
   font-size: 2.2rem;
 }
 
-.about p {
-  margin-bottom: 30px;
+.about .info .info-text p {
+  margin-bottom: 40px;
 }
 
-.about a {
+.about .info .info-text a {
   position: relative;
   background-color: #fff;
   color: #333645;
   padding: 15px;
   font-size: 1.063rem;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
-.about .arrow {
+.about .info .info-text .arrow {
   margin-left: 5px;
 }
 
@@ -996,13 +1248,14 @@ body {
   display: flex;
   justify-content: left;
   width: 80%;
-  padding: 0 230px;
+  margin: 0;
 }
 
 .news .active {
   height: 70px;
   width: 100%;
   list-style: none;
+  padding-left: 260px;
 }
 
 .news .active span {
@@ -1016,7 +1269,8 @@ body {
   background-color: #333645;
   width: 62px;
   height: 5px;
-  margin-top: 48px;
+  margin-top: 35px;
+  position: absolute;
 }
 
 .news .stories {
@@ -1233,6 +1487,7 @@ footer {
 }
 
 footer a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -1741,6 +1996,10 @@ footer ul {
   color: #fff;
 }
 
+.it:hover .drop2 {
+  display: flex;
+}
+
 .telecoms:hover {
   background-color: #d64541;
   color: white;
@@ -1748,6 +2007,10 @@ footer ul {
 
 .telecoms:hover i {
   color: #fff;
+}
+
+.telecoms:hover .drop3 {
+  display: flex;
 }
 
 .software:hover {
@@ -1759,6 +2022,10 @@ footer ul {
   color: #fff;
 }
 
+.software:hover .drop4 {
+  display: flex;
+}
+
 .digital:hover {
   background-color: #2eec71;
   color: white;
@@ -1766,6 +2033,10 @@ footer ul {
 
 .digital:hover i {
   color: #fff;
+}
+
+.digital:hover .drop5 {
+  display: flex;
 }
 
 .security:hover {
@@ -1777,9 +2048,14 @@ footer ul {
   color: #fff;
 }
 
-.webdrop > ul > li:not(:last-child) a::after {
+.security:hover .drop6 {
+  display: flex;
+}
+
+.drop > .web-li:not(:last-child) a::after {
   content: "-";
   padding-left: 40px;
+  color: #fff;
 }
 
 .card-soft::after {

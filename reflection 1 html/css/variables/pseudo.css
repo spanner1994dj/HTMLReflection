@@ -38,6 +38,10 @@
   color: #fff;
 }
 
+.it:hover .drop2 {
+  display: flex;
+}
+
 .telecoms:hover {
   background-color: #d64541;
   color: white;
@@ -45,6 +49,10 @@
 
 .telecoms:hover i {
   color: #fff;
+}
+
+.telecoms:hover .drop3 {
+  display: flex;
 }
 
 .software:hover {
@@ -56,6 +64,10 @@
   color: #fff;
 }
 
+.software:hover .drop4 {
+  display: flex;
+}
+
 .digital:hover {
   background-color: #2eec71;
   color: white;
@@ -63,6 +75,10 @@
 
 .digital:hover i {
   color: #fff;
+}
+
+.digital:hover .drop5 {
+  display: flex;
 }
 
 .security:hover {
@@ -74,9 +90,14 @@
   color: #fff;
 }
 
-.webdrop > ul > li:not(:last-child) a::after {
+.security:hover .drop6 {
+  display: flex;
+}
+
+.drop > .web-li:not(:last-child) a::after {
   content: "-";
   padding-left: 40px;
+  color: #fff;
 }
 
 .card-soft::after {
