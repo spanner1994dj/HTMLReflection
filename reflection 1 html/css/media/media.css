@@ -92,6 +92,10 @@
   .card-develop {
     width: 48.5%;
   }
+  .about .info .info-text {
+    max-width: 555px;
+    padding-left: 200px;
+  }
   /* footer elements */
   .ft-align {
     display: flex;
@@ -148,6 +152,7 @@
   }
   .itsupport .it-text {
     text-align: left;
+    padding-left: 200px;
   }
   .card-soft {
     width: 32%;
