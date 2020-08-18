@@ -311,6 +311,11 @@
     .greyscale{
         display: none;
     }
+
+}
+
+.busseys:hover ~ .tooltip-1{
+    visibility: visible;
 }
 
 .crane:hover{
@@ -322,6 +327,10 @@
     }
 }
 
+.crane:hover ~ .tooltip-2{
+    visibility: visible;
+}
+
 .beat:hover{
     .coloured{
         display: block;
@@ -331,6 +340,10 @@
     }
 }
 
+.beat:hover ~ .tooltip-3{
+    visibility: visible;
+}
+
 .north:hover{
     .coloured{
         display: block;
@@ -338,6 +351,9 @@
     .greyscale{
         display: none;
     }
+}
+.north:hover ~ .tooltip-4{
+    visibility: visible;
 }
 
 .further:hover{
