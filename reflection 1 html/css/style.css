@@ -1278,20 +1278,27 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 
 .news ul {
   display: flex;
   justify-content: left;
-  width: 80%;
-  margin: 0;
+  width: 1375px;
+  margin: auto;
+}
+
+@media (max-width: 992) {
+  .news ul {
+    width: 850px;
+  }
 }
 
 .news .active {
   height: 70px;
   width: 100%;
   list-style: none;
-  padding-left: 300px;
+  padding-left: 0px;
 }
 
 .news .active span {
@@ -1309,12 +1316,6 @@ body {
   position: absolute;
 }
 
-.news .stories {
-  padding-top: 20px;
-  background-color: #f0f0f0;
-  width: 100%;
-}
-
 .news .break {
   height: 1px;
   width: 80%;
@@ -1324,20 +1325,34 @@ body {
   margin-top: 20px;
 }
 
-.news .articles {
-  padding: 0 250px;
+.news .stories {
+  padding-top: 20px;
+  background-color: #f0f0f0;
+  width: 5000px;
+}
+
+.news .stories .articles {
+  width: 1298px;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 550px;
 }
 
-.news .articles .art {
+@media (max-width: 992px) {
+  .news .stories .articles {
+    width: 850px;
+    padding: 0 75px;
+  }
+}
+
+.news .stories .articles .art {
   border: solid 2px #ccc;
   background-color: #fff;
 }
 
-.news .articles .read {
+.news .stories .articles .read {
   margin: 0 0px 20px 30px;
   height: auto;
   padding: 5px 15px;
@@ -1351,25 +1366,25 @@ body {
   -o-border-radius: 3px;
 }
 
-.news .articles .text {
+.news .stories .articles .text {
   padding: 20px 30px 20px 30px;
   margin-top: -10px;
 }
 
-.news .articles .text p {
+.news .stories .articles .text p {
   display: block;
   color: #666;
   max-width: 100%;
   font-size: .8125rem;
 }
 
-.news .articles h3 {
+.news .stories .articles h3 {
   margin-top: 20px;
   font-size: 1rem;
   padding-left: 30px;
 }
 
-.news .articles .avatar {
+.news .stories .articles .avatar {
   width: 60px;
   height: 60px;
   margin: 20px;
@@ -1380,114 +1395,101 @@ body {
   -o-border-radius: 50%;
 }
 
-.news .articles .img-wrap {
+.news .stories .articles .img-wrap {
   overflow: hidden;
   width: 100%;
   height: auto;
 }
 
-.news .articles .img-wrap .img-top {
+.news .stories .articles .img-wrap .img-top {
   width: 100%;
   position: relative;
   justify-content: center;
 }
 
-.news .articles .art-1 {
+.news .stories .articles .art-1 {
   display: flex;
   flex-direction: column;
   width: 337.6px;
 }
 
-.news .articles .art-1 .tool {
-  display: block;
-  width: 100%;
-}
-
-.news .articles .art-1 .tool .tooltip {
-  position: relative;
-  justify-content: right;
-  z-index: 1;
-  color: #fff;
-  background-color: #926fb1;
-}
-
-.news .articles .art-1 h3 {
+.news .stories .articles .art-1 h3 {
   color: #926fb1;
   display: block;
 }
 
-.news .articles .art-1 .read-1 {
+.news .stories .articles .art-1 .read-1 {
   background-color: #926fb1;
   color: #fff;
   width: 140px;
 }
 
-.news .articles .art-1 .user {
+.news .stories .articles .art-1 .user {
   display: flex;
   flex-direction: row;
 }
 
-.news .articles .art-1 .user .details {
+.news .stories .articles .art-1 .user .details {
   position: relative;
   margin: 20px;
   margin-top: 30px;
 }
 
-.news .articles .art-2 {
+.news .stories .articles .art-2 {
   width: 337.6px;
   display: flex;
   flex-direction: column;
 }
 
-.news .articles .art-2 h3 {
+.news .stories .articles .art-2 h3 {
   color: #2ecc71;
 }
 
-.news .articles .art-2 .read-2 {
+.news .stories .articles .art-2 .read-2 {
   background-color: #2ecc71;
   color: #fff;
   width: 140px;
 }
 
-.news .articles .art-2 .user {
+.news .stories .articles .art-2 .user {
   display: flex;
   flex-direction: row;
 }
 
-.news .articles .art-2 .user .details {
+.news .stories .articles .art-2 .user .details {
   position: relative;
   margin: 20px;
   margin-top: 30px;
 }
 
-.news .articles .art-3 {
+.news .stories .articles .art-3 {
   width: 337.6px;
   margin-right: 0px;
   display: none;
   flex-direction: column;
 }
 
-.news .articles .art-3 h3 {
+.news .stories .articles .art-3 h3 {
   color: #2ecc71;
   margin-bottom: 20px;
 }
 
-.news .articles .art-3 .text {
+.news .stories .articles .art-3 .text {
   padding-top: 0;
 }
 
-.news .articles .art-3 .read-3 {
+.news .stories .articles .art-3 .read-3 {
   background-color: #2ecc71;
   color: #fff;
   width: 140px;
 }
 
-.news .articles .art-3 .user {
+.news .stories .articles .art-3 .user {
   display: flex;
   flex-direction: row;
 }
 
-.news .articles .art-3 .user .details {
+.news .stories .articles .art-3 .user .details {
   position: relative;
   margin: 20px;
   margin-top: 30px;
@@ -1502,12 +1504,57 @@ body {
 }
 
 .credit .cred {
-  padding: 10px 140px;
+  padding: 10px 10px;
   height: 100%;
-  width: auto;
+  width: 80%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .credit .cred {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .credit .cred {
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .credit .cred .busseys img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .credit .cred .busseys img {
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .credit .cred .crane img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .credit .cred .beat img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .credit .cred .north img {
+    width: 120px;
+  }
 }
 
 .credit .cred .tooltip-1 {
@@ -1530,6 +1577,18 @@ body {
   height: 3px;
   margin-left: 105px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .credit .cred .tooltip-1 {
+    position: absolute;
+    top: 4227px;
+    left: 0;
+    width: 150px;
+  }
+  .credit .cred .tooltip-1 .line {
+    margin-left: 50px;
+  }
 }
 
 .credit .cred .tooltip-1::after {
@@ -1825,304 +1884,6 @@ footer ul {
   -ms-transform: scale(0.5);
   -o-transform: scale(0.5);
   background-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .search-bar {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 200px;
-    display: inline-block;
-  }
-  .search-form {
-    display: inline-block;
-    width: fit-content;
-  }
-  .fa-search {
-    display: inline-block;
-  }
-  .logo {
-    max-width: 90%;
-    max-height: fit-content;
-    margin-bottom: 0;
-    align-self: auto;
-  }
-  .action {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: right;
-    width: auto;
-    margin-top: 4px;
-    margin-left: 0px;
-  }
-  .ham-box {
-    display: inline-block;
-    top: 29px;
-  }
-  .telephone {
-    display: none;
-  }
-  .search-btn {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: -15px;
-  }
-  .search-xs {
-    display: none;
-  }
-  .search-form-xs {
-    display: none;
-  }
-  .search-bar-xs {
-    display: none;
-  }
-  .search-btn-s {
-    display: none;
-  }
-  .material-icons {
-    display: none;
-  }
-  .container {
-    display: inline-block;
-    width: 100%;
-  }
-  .container ul {
-    width: 100%;
-  }
-  /* Cards */
-  .card-soft {
-    width: 100%;
-    margin-right: 0;
-  }
-  .card-it {
-    width: 100%;
-    margin-right: 0;
-  }
-  .card-digital {
-    width: 100%;
-    margin-right: 0;
-  }
-  .card-telecoms {
-    width: 48.5%;
-  }
-  .card-web {
-    width: 48.5%;
-  }
-  .card-cyber {
-    width: 48.5%;
-  }
-  .card-develop {
-    width: 48.5%;
-  }
-  .about .info .info-text {
-    max-width: 700px;
-    padding-left: 200px;
-  }
-  /* footer elements */
-  .ft-align {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-  }
-  .contacts {
-    width: 50%;
-    margin-left: 0px;
-  }
-  .contacts ul {
-    padding-left: 0px;
-    text-align: left;
-  }
-  .comp {
-    width: 50%;
-  }
-  .website {
-    width: 50%;
-  }
-  .social {
-    width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .btn-contact {
-    display: inline-block;
-  }
-  .btn-support {
-    display: inline-block;
-  }
-  .search-bar {
-    display: none;
-  }
-  .search-btn {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-  }
-  .title {
-    display: inline-block;
-    align-self: left;
-    text-align: bottom;
-  }
-  .header-inner {
-    justify-content: center;
-  }
-  .itsupport .it-text {
-    text-align: left;
-    padding-left: 390px;
-    padding-top: 0;
-  }
-  .card-soft {
-    width: 32%;
-    margin-right: 0;
-  }
-  .card-it {
-    width: 32%;
-    margin-right: 0;
-  }
-  .card-digital {
-    width: 32%;
-    margin-right: 0;
-  }
-  .card-telecoms {
-    width: 48.5%;
-  }
-  .card-web {
-    width: 48.5%;
-  }
-  .card-cyber {
-    width: 48.5%;
-  }
-  .card-develop {
-    width: 48.5%;
-  }
-  .info-text {
-    width: 100%;
-  }
-  .news .articles .art-3 {
-    display: flex;
-  }
-  /* footer */
-  .contacts {
-    width: 50%;
-    margin-left: 0px;
-  }
-  .contacts ul {
-    padding-left: 0px;
-    text-align: left;
-  }
-  .comp {
-    width: 50%;
-  }
-  .website {
-    width: 50%;
-  }
-  .social {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .social .social-media {
-    width: 100%;
-  }
-  .social .faces {
-    width: 45%;
-  }
-  .social .twits {
-    width: 45%;
-  }
-  .social .linkd {
-    width: 45%;
-  }
-}
-
-@media (min-width: 1260px) {
-  .search-bar {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .action {
-    justify-self: right;
-    width: auto;
-  }
-  .search-btn {
-    margin-left: -15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .crd-place {
-    width: 1268px;
-    height: auto;
-    justify-content: left;
-  }
-  .cards {
-    justify-items: center;
-    align-content: center;
-  }
-  .card-soft {
-    width: 31.66%;
-    margin-right: 0;
-  }
-  .card-it {
-    width: 31.66%;
-    margin-right: 0;
-  }
-  .card-digital {
-    width: 31.66%;
-    margin-right: 0;
-  }
-  .card-telecoms {
-    width: 23.55%;
-  }
-  .card-web {
-    width: 23.55%;
-  }
-  .card-cyber {
-    width: 23.55%;
-  }
-  .card-develop {
-    width: 23.55%;
-  }
-  .info {
-    width: 100%;
-  }
-  .info .info-text {
-    width: 100%;
-    padding-left: 1000px;
-  }
-  footer {
-    align-content: center;
-  }
-  .contacts {
-    width: 25%;
-  }
-  .comp {
-    width: 25%;
-  }
-  .website {
-    width: 25%;
-  }
-  .social {
-    width: 25%;
-  }
-  .social-media {
-    width: 100%;
-    text-align: center;
-  }
-  .social-media h4 {
-    text-align: center;
-    width: 100%;
-  }
-  .faces {
-    width: 45%;
-  }
 }
 
 /*header*/
@@ -2500,3 +2261,300 @@ footer ul {
 }
 
 /*mixins*/
+@media (min-width: 768px) {
+  .search-bar {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    display: inline-block;
+  }
+  .search-form {
+    display: inline-block;
+    width: fit-content;
+  }
+  .fa-search {
+    display: inline-block;
+  }
+  .logo {
+    max-width: 90%;
+    max-height: fit-content;
+    margin-bottom: 0;
+    align-self: auto;
+  }
+  .action {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: right;
+    width: auto;
+    margin-top: 4px;
+    margin-left: 0px;
+  }
+  .ham-box {
+    display: inline-block;
+    top: 29px;
+  }
+  .telephone {
+    display: none;
+  }
+  .search-btn {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: -15px;
+  }
+  .search-xs {
+    display: none;
+  }
+  .search-form-xs {
+    display: none;
+  }
+  .search-bar-xs {
+    display: none;
+  }
+  .search-btn-s {
+    display: none;
+  }
+  .material-icons {
+    display: none;
+  }
+  .container {
+    display: inline-block;
+    width: 100%;
+  }
+  .container ul {
+    width: 100%;
+  }
+  /* Cards */
+  .card-soft {
+    width: 100%;
+    margin-right: 0;
+  }
+  .card-it {
+    width: 100%;
+    margin-right: 0;
+  }
+  .card-digital {
+    width: 100%;
+    margin-right: 0;
+  }
+  .card-telecoms {
+    width: 48.5%;
+  }
+  .card-web {
+    width: 48.5%;
+  }
+  .card-cyber {
+    width: 48.5%;
+  }
+  .card-develop {
+    width: 48.5%;
+  }
+  .about .info .info-text {
+    max-width: 700px;
+    padding-left: 200px;
+  }
+  /* footer elements */
+  .ft-align {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .contacts {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .contacts ul {
+    padding-left: 0px;
+    text-align: left;
+  }
+  .comp {
+    width: 50%;
+  }
+  .website {
+    width: 50%;
+  }
+  .social {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-contact {
+    display: inline-block;
+  }
+  .btn-support {
+    display: inline-block;
+  }
+  .search-bar {
+    display: none;
+  }
+  .search-btn {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  .title {
+    display: inline-block;
+    align-self: left;
+    text-align: bottom;
+  }
+  .header-inner {
+    justify-content: center;
+  }
+  .itsupport .it-text {
+    text-align: left;
+    padding-left: 390px;
+    padding-top: 0;
+  }
+  .card-soft {
+    width: 32%;
+    margin-right: 0;
+  }
+  .card-it {
+    width: 32%;
+    margin-right: 0;
+  }
+  .card-digital {
+    width: 32%;
+    margin-right: 0;
+  }
+  .card-telecoms {
+    width: 48.5%;
+  }
+  .card-web {
+    width: 48.5%;
+  }
+  .card-cyber {
+    width: 48.5%;
+  }
+  .card-develop {
+    width: 48.5%;
+  }
+  .info-text {
+    width: 100%;
+  }
+  .news .stories .articles .art-3 {
+    display: flex;
+  }
+  /* footer */
+  .contacts {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .contacts ul {
+    padding-left: 0px;
+    text-align: left;
+  }
+  .comp {
+    width: 50%;
+  }
+  .website {
+    width: 50%;
+  }
+  .social {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .social .social-media {
+    width: 100%;
+  }
+  .social .faces {
+    width: 45%;
+  }
+  .social .twits {
+    width: 45%;
+  }
+  .social .linkd {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .search-bar {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .action {
+    justify-self: right;
+    width: auto;
+  }
+  .search-btn {
+    margin-left: -15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .crd-place {
+    width: 1268px;
+    height: auto;
+    justify-content: left;
+  }
+  .cards {
+    justify-items: center;
+    align-content: center;
+  }
+  .card-soft {
+    width: 31.66%;
+    margin-right: 0;
+  }
+  .card-it {
+    width: 31.66%;
+    margin-right: 0;
+  }
+  .card-digital {
+    width: 31.66%;
+    margin-right: 0;
+  }
+  .card-telecoms {
+    width: 23.55%;
+  }
+  .card-web {
+    width: 23.55%;
+  }
+  .card-cyber {
+    width: 23.55%;
+  }
+  .card-develop {
+    width: 23.55%;
+  }
+  .info {
+    width: 100%;
+  }
+  .info .info-text {
+    width: 100%;
+    padding-left: 1000px;
+  }
+  footer {
+    align-content: center;
+  }
+  .contacts {
+    width: 25%;
+  }
+  .comp {
+    width: 25%;
+  }
+  .website {
+    width: 25%;
+  }
+  .social {
+    width: 25%;
+  }
+  .social-media {
+    width: 100%;
+    text-align: center;
+  }
+  .social-media h4 {
+    text-align: center;
+    width: 100%;
+  }
+  .faces {
+    width: 45%;
+  }
+}
