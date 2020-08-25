@@ -1284,13 +1284,13 @@ body {
 .news ul {
   display: flex;
   justify-content: left;
-  width: 1375px;
+  width: 1175px;
   margin: auto;
 }
 
-@media (max-width: 992) {
+@media (max-width: 992px) {
   .news ul {
-    width: 850px;
+    width: 780px;
   }
 }
 
@@ -1299,6 +1299,7 @@ body {
   width: 100%;
   list-style: none;
   padding-left: 0px;
+  padding-top: 30px;
 }
 
 .news .active span {
@@ -1306,13 +1307,14 @@ body {
   font-weight: 600;
   color: #333645;
   margin-left: 0;
+  margin-top: 69px;
 }
 
 .news .active .line {
   background-color: #333645;
   width: 62px;
   height: 5px;
-  margin-top: 35px;
+  margin-top: 38px;
   position: absolute;
 }
 
@@ -1326,13 +1328,14 @@ body {
 }
 
 .news .stories {
+  padding: 0 100px;
   padding-top: 20px;
   background-color: #f0f0f0;
   width: 5000px;
 }
 
 .news .stories .articles {
-  width: 1298px;
+  width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -1340,10 +1343,22 @@ body {
   height: 550px;
 }
 
+@media (min-width: 768px) {
+  .news .stories .articles {
+    padding: 0 500px;
+  }
+}
+
 @media (max-width: 992px) {
   .news .stories .articles {
     width: 850px;
-    padding: 0 75px;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .news .stories .articles {
+    padding: 0 100px;
   }
 }
 
