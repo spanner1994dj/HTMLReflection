@@ -96,6 +96,8 @@
     color: #fff;
 }
 
+/* cards */
+
 .card-soft::after{
     content: " ";
     display: table;
@@ -292,6 +294,11 @@
 
 .img-top:hover{
     opacity: .75;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -352,6 +359,26 @@
         display: none;
     }
 }
+
+footer{
+    a:hover{
+        text-decoration: underline;
+        
+    }
+    .social-media{
+        .faces:hover{
+          background-color:#3b5998 ;
+        }
+
+        .twits:hover{
+            background-color: #00aced;
+        }
+        .linkd:hover{
+            background-color: #0077b5;
+        }
+    }
+}
+
 .north:hover ~ .tooltip-4{
     visibility: visible;
 }

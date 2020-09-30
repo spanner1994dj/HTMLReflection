@@ -7,6 +7,8 @@ html {
   font-family: sans-serif;
   font-size: 16px;
   margin-left: 0;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
@@ -18,7 +20,8 @@ body {
   width: 100%;
   letter-spacing: .4px;
   margin: 0;
-  overflow-x: hidden;
+  height: 100%;
+  overflow: auto;
 }
 
 /* Header */
@@ -241,6 +244,7 @@ body {
   display: inline-block;
   width: 99%;
   height: 80px;
+  margin-left: 20px;
 }
 
 .search-xs .search-bar-xs {
@@ -268,7 +272,7 @@ body {
   color: #555555;
   /*Box*/
   height: 47px;
-  padding: 5px 40px;
+  padding: 5px 20px;
   /*Effects*/
   transform: none;
   transition: 0;
@@ -345,10 +349,40 @@ body {
   /* web drop menu*/
 }
 
+.nav-bar .nav-bar-align {
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 992px) {
+  .nav-bar .nav-bar-align {
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .nav-bar .nav-bar-align {
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nav-bar .nav-bar-align {
+    padding-left: 250px;
+  }
+}
+
 .nav-bar li {
   display: inline-block;
   position: relative;
-  width: 192px;
+  width: 15%;
+  max-width: 192px;
+  margin-left: auto;
   height: 99px;
   text-align: center;
   color: #fff;
@@ -379,6 +413,7 @@ body {
 .nav-bar a small {
   display: block;
   font-size: 0.800rem;
+  margin-bottom: 5px;
 }
 
 .nav-bar .drop {
@@ -816,6 +851,62 @@ body {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
+}
+
+.cards h2 {
+  font-weight: 400;
+}
+
+.cards .line-2 {
+  background: #000;
+  width: 75px;
+  height: 3px;
+  margin-left: 260px;
+}
+
+@media (min-width: 768px) {
+  .cards .line-2 {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards .line-2 {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .cards .line-2 {
+    margin-left: 75px;
+  }
+}
+
+.cards .line-1 {
+  background: #000;
+  width: 75px;
+  height: 3px;
+  margin-left: 250px;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .cards .line-1 {
+    margin-left: 325px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards .line-1 {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .cards .line-1 {
+    margin-left: 125px;
+  }
 }
 
 .crd-place {
@@ -835,7 +926,7 @@ body {
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 15px;
-  padding-top: 30px;
+  padding: 10px 30px 30px;
   width: 100%;
   text-align: center;
   background: #fff;
@@ -852,6 +943,7 @@ body {
   text-justify: auto;
   justify-content: center;
   color: #000;
+  padding: 0 10px;
 }
 
 .card-soft button {
@@ -861,7 +953,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -873,7 +965,8 @@ body {
 .card-soft .icn-bespoked {
   transform: scale(1.5);
   border: solid 1px #67809f;
-  padding: 20px;
+  padding: 10px;
+  margin-top: 5px;
   border-radius: 50%;
   color: #fff;
   padding: 12px;
@@ -918,7 +1011,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -990,7 +1083,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1042,7 +1135,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1094,7 +1187,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1146,7 +1239,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1195,23 +1288,13 @@ body {
   justify-content: center;
   height: 50px;
   background-color: #79539a;
-  background-color-justify-content: center;
-  background-color-height: 50px;
-  background-color-background-color: #4183d7;
-  background-color-color: #fff;
-  background-color-text-transform: uppercase;
-  background-color-padding: 10px;
-  background-color-font-size: 20px;
-  background-color-border-width: 0;
-  background-color-border-radius: 6px;
-  background-color--webkit-border-radius: 6px;
-  background-color--moz-border-radius: 6px;
-  background-color--ms-border-radius: 6px;
-  background-color--o-border-radius: 6px;
+  justify-content: center;
+  height: 50px;
+  background-color: #4183d7;
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   border-width: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1230,7 +1313,8 @@ body {
   background-color: #333645;
   color: #fff;
   justify-content: center;
-  height: 600px;
+  height: auto;
+  padding: 40px 0;
 }
 
 .about .info {
@@ -1238,13 +1322,14 @@ body {
   width: 100%;
   font-size: 1rem;
   margin-left: 10px;
-  padding-left: 130px;
-  padding-top: 50px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .about .info .info-text {
   width: 80%;
-  max-height: 600px;
+  height: auto;
 }
 
 .about .info .info-text h1 {
@@ -1272,93 +1357,123 @@ body {
 
 /* Latest News*/
 .news {
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 100%;
+  width: 100vw;
 }
 
-.news ul {
+.news .news-align {
   display: flex;
   justify-content: left;
-  width: 1175px;
+  width: 1200px;
   margin: auto;
 }
 
 @media (max-width: 992px) {
-  .news ul {
-    width: 780px;
+  .news .news-align {
+    width: 950px;
   }
 }
 
 .news .active {
+  position: relative;
+  left: 0;
   height: 70px;
   width: 100%;
   list-style: none;
-  padding-left: 0px;
+  padding-left: 200px;
   padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .news .active {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .news .active {
+    padding-left: 100px;
+  }
+}
+
 .news .active span {
-  font-size: 1.25rem;
+  position: relative;
+  font-size: 1.24rem;
   font-weight: 600;
   color: #333645;
   margin-left: 0;
   margin-top: 69px;
+  text-transform: uppercase;
 }
 
-.news .active .line {
+.news .active span .line {
   background-color: #333645;
-  width: 62px;
+  width: 76px;
   height: 5px;
-  margin-top: 38px;
-  position: absolute;
-}
-
-.news .break {
-  height: 1px;
-  width: 80%;
-  background-color: #ccc;
-  justify-self: center;
-  align-self: center;
-  margin-top: 20px;
+  position: relative;
 }
 
 .news .stories {
-  padding: 0 100px;
-  padding-top: 20px;
+  padding: 40px 170px;
   background-color: #f0f0f0;
-  width: 5000px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .news .stories {
+    padding-left: 30px;
+    width: 990px;
+  }
+}
+
+@media (min-width: 992px) {
+  .news .stories {
+    padding-left: 150px;
+    width: 1290px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .news .stories {
+    padding-left: 200px;
+    width: 5000px;
+  }
 }
 
 .news .stories .articles {
-  width: 100vw;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  height: 550px;
+  height: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .news .stories .articles {
-    padding: 0 500px;
+    width: 760px;
+    flex-direction: row;
+    padding-left: 0px;
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .news .stories .articles {
-    width: 850px;
-    padding: 0 70px;
+    width: 990px;
   }
 }
 
 @media (min-width: 1268px) {
   .news .stories .articles {
-    padding: 0 100px;
+    width: 1100px;
+    padding-left: 0;
   }
 }
 
@@ -1411,9 +1526,30 @@ body {
 }
 
 .news .stories .articles .img-wrap {
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: auto;
+}
+
+.news .stories .articles .img-wrap .img-btn-1 {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: #926fb1;
+  border-style: none;
+  color: #fff;
+  font-size: .9rem;
+}
+
+.news .stories .articles .img-wrap .img-btn-2 {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: #2ecc71;
+  border-style: none;
+  color: #fff;
+  font-size: .9rem;
 }
 
 .news .stories .articles .img-wrap .img-top {
@@ -1426,6 +1562,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 337.6px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .news .stories .articles .art-1 {
+    width: 600px;
+  }
 }
 
 .news .stories .articles .art-1 h3 {
@@ -1452,16 +1595,16 @@ body {
 
 .news .stories .articles .art-2 {
   width: 337.6px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 .news .stories .articles .art-2 h3 {
-  color: #2ecc71;
+  color: #926fb1;
 }
 
 .news .stories .articles .art-2 .read-2 {
-  background-color: #2ecc71;
+  background-color: #926fb1;
   color: #fff;
   width: 140px;
 }
@@ -1741,7 +1884,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 0 150px;
+  padding: 0px;
 }
 
 .ft-align h4 {
@@ -1807,7 +1950,7 @@ footer ul {
 
 .social .twits {
   background-color: #262934;
-  width: 45%;
+  width: 40%;
   height: auto;
   margin-top: 30px;
   cursor: pointer;
@@ -1838,7 +1981,7 @@ footer ul {
 }
 
 .partners {
-  display: flex;
+  display: none;
   flex-direction: row;
   height: 200px;
   width: 100%;
@@ -1862,26 +2005,46 @@ footer ul {
 }
 
 .silver {
-  margin-top: 35px;
+  margin-top: 15px;
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  -ms-transform: scale(0.55);
+  -o-transform: scale(0.55);
 }
 
 .further {
-  margin-top: 35px;
+  margin-top: 15px;
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  -ms-transform: scale(0.55);
+  -o-transform: scale(0.55);
 }
 
 .QMS {
-  margin-top: 35px;
+  margin-top: 15px;
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  -ms-transform: scale(0.55);
+  -o-transform: scale(0.55);
 }
 
 .carbon {
-  margin-top: 35px;
+  margin-top: 15px;
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  -ms-transform: scale(0.55);
+  -o-transform: scale(0.55);
 }
 
 .google {
   position: relative;
   width: 200px;
   height: 200px;
-  margin-right: 0;
+  margin-right: 10px;
   margin-left: -30px;
 }
 
@@ -1893,11 +2056,11 @@ footer ul {
   margin-right: 0px;
   margin-left: -20px;
   border: solid 2px #ccc;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
+  transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
   background-color: transparent;
 }
 
@@ -2003,6 +2166,7 @@ footer ul {
   color: #fff;
 }
 
+/* cards */
 .card-soft::after {
   content: " ";
   display: table;
@@ -2192,6 +2356,11 @@ footer ul {
 
 .img-top:hover {
   opacity: .75;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -2245,6 +2414,22 @@ footer ul {
 
 .north:hover .greyscale {
   display: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media .faces:hover {
+  background-color: #3b5998;
+}
+
+footer .social-media .twits:hover {
+  background-color: #00aced;
+}
+
+footer .social-media .linkd:hover {
+  background-color: #0077b5;
 }
 
 .north:hover ~ .tooltip-4 {
@@ -2336,8 +2521,11 @@ footer ul {
     display: inline-block;
     width: 100%;
   }
-  .container ul {
+  .container .nav-bar-align {
     width: 100%;
+  }
+  .container .nav-bar-align li {
+    justify-items: center;
   }
   /* Cards */
   .card-soft {
@@ -2368,6 +2556,9 @@ footer ul {
     max-width: 700px;
     padding-left: 70px;
   }
+  .news .stories .articles .art-2 {
+    display: flex;
+  }
   /* footer elements */
   .ft-align {
     display: flex;
@@ -2391,6 +2582,9 @@ footer ul {
   }
   .social {
     width: 50%;
+  }
+  .partners {
+    display: flex;
   }
 }
 
@@ -2490,6 +2684,45 @@ footer ul {
   .social .linkd {
     width: 45%;
   }
+  .partners .google .goo {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  .partners .silver {
+    margin-top: 35px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  .partners .further {
+    margin-top: 35px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  .partners .QMS {
+    margin-top: 35px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  .partners .carbon {
+    margin-top: 35px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
 }
 
 @media (min-width: 1260px) {
@@ -2516,35 +2749,39 @@ footer ul {
     align-content: center;
   }
   .card-soft {
-    width: 31.66%;
-    margin-right: 0;
+    width: 30%;
+    margin-right: 23.5px;
+    margin-left: 10px;
   }
   .card-it {
-    width: 31.66%;
-    margin-right: 0;
+    width: 30%;
+    margin-right: 23.5px;
   }
   .card-digital {
-    width: 31.66%;
+    width: 30%;
     margin-right: 0;
   }
   .card-telecoms {
-    width: 23.55%;
+    width: 22.5%;
+    margin-right: 12.5px;
   }
   .card-web {
-    width: 23.55%;
+    width: 22.5%;
+    margin-right: 12.5px;
   }
   .card-cyber {
-    width: 23.55%;
+    width: 22.5%;
+    margin-right: 12.5px;
   }
   .card-develop {
-    width: 23.55%;
+    width: 22.5%;
   }
   .info {
     width: 100%;
   }
   .info .info-text {
     width: 100%;
-    padding-left: 1000px;
+    margin-left: 250px;
   }
   footer {
     align-content: center;
@@ -2573,3 +2810,5 @@ footer ul {
     width: 45%;
   }
 }
+
+/*IE Media Queries*/
