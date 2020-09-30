@@ -1443,6 +1443,8 @@ body {
   .news .stories {
     padding-left: 200px;
     width: 5000px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
